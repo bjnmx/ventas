@@ -223,6 +223,7 @@ body,html{
     /*background: url('https://images.pexels.com/photos/9794174/pexels-photo-9794174.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load') center/cover;*/
     position: relative;
     background-color: rgba(53, 54, 58, 0.8); /* Ajusta la opacidad según sea necesario */
+
 }
 
 .navLateral-body-logo {
