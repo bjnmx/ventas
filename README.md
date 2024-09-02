@@ -1,4 +1,4 @@
-# SISTEMA DE VENTAS BASICO
+# SISTEMA DE VENTAS 1era etapa 
 SISTEMA de VENTAS BASICO desarrollado en PHP, MySQL, MVC, AJAX &amp; BULMA
 
 # ▶️ INSTALACIÓN
@@ -16,5 +16,3 @@ Importante no olvide colocar en la URL si es http o https</p>
 <p>Usuario: Administrador</p>
 <p>Clave: Administrador</p>
 
-# VIDEO DE INSTALACION
-<a href="https://youtu.be/y2HTHzBaTQE" target="_blank">Ver video en YouTube</a>
