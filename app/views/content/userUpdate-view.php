@@ -1,4 +1,5 @@
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="container is-fluid mb-2">
 	<?php 
 
 		$id=$insLogin->limpiarCadena($url[1]);
@@ -16,7 +17,7 @@
 	<h2 class="subtitle"><i class="fas fa-sync-alt"></i> &nbsp; Actualizar usuario</h2>
 	<?php } ?>
 </div>
-<div class="container pb-6 pt-6">
+<div class="container pb-1 pt-1">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";
@@ -157,4 +158,5 @@
 			include "./app/views/inc/error_alert.php";
 		}
 	?>
+</div>
 </div>

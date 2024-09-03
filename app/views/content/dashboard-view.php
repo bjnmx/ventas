@@ -37,25 +37,25 @@
         </div>
         <div class="dashboard-item">
             <a href="<?php echo APP_URL; ?>userList/">
-                <p class="heading"><i class="fas fa-users fa-fw"></i> &nbsp; Usuarios</p>
+                <p class="heading"><i class="fa-duotone fa-solid fa-users"></i> &nbsp; Usuarios</p>
                 <p class="title"><?php echo $total_usuarios->rowCount(); ?></p>
             </a>
         </div>
         <div class="dashboard-item">
             <a href="<?php echo APP_URL; ?>clientList/">
-                <p class="heading"><i class="fas fa-address-book fa-fw"></i> &nbsp; Clientes</p>
+                <p class="heading"><i class="fa-duotone fa-solid fa-calendar-circle-user"></i> &nbsp; Clientes</p>
                 <p class="title"><?php echo $total_clientes->rowCount(); ?></p>
             </a>
         </div>
         <div class="dashboard-item">
             <a href="<?php echo APP_URL; ?>categoryList/">
-                <p class="heading"><i class="fas fa-tags fa-fw"></i> &nbsp; Categorías</p>
+                <p class="heading"><i class="fa-duotone fa-solid fa-layer-group"></i> &nbsp; Categorías</p>
                 <p class="title"><?php echo $total_categorias->rowCount(); ?></p>
             </a>
         </div>
         <div class="dashboard-item">
             <a href="<?php echo APP_URL; ?>productList/">
-                <p class="heading"><i class="fas fa-cubes fa-fw"></i> &nbsp; Productos</p>
+                <p class="heading"><i class="fa-duotone fa-solid fa-boxes-stacked"></i> &nbsp; Productos</p>
                 <p class="title"><?php echo $total_productos->rowCount(); ?></p>
             </a>
         </div>
@@ -67,7 +67,7 @@
         </div>
         <div class="dashboard-item">
             <a href="<?php echo APP_URL; ?>reportSales/">
-                <p class="heading"><i class="far fa-file-pdf fa-fw"></i> &nbsp; Reportes</p>
+                <p class="heading"><i class="fa-duotone fa-solid fa-file-pdf"></i> &nbsp; Reportes</p>
                 <p class="title"><?php echo $total_reporte->rowCount(); ?></p>
 
             </a>

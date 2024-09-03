@@ -1,5 +1,6 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Usuarios</h1>
 	<h2 class="subtitle"><i class="fas fa-user-tie fa-fw"></i> &nbsp; Nuevo usuario</h2>
 </div>
@@ -13,13 +14,13 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Nombres <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Nombres <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="usuario_nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" maxlength="40" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Apellidos <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Apellidos <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="usuario_apellido" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}" maxlength="40" required >
 				</div>
 		  	</div>
@@ -27,27 +28,27 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Usuario <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Usuario <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="usuario_usuario" pattern="[a-zA-Z0-9]{4,20}" maxlength="20" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Email</label>
-				  	<input class="input" type="email" name="usuario_email" maxlength="70" >
+					<label class="labelForze">Email</label>
+				  	<input class="input" type="email" name="usuario_email" maxlength="70" autocomplete="off" >
 				</div>
 		  	</div>
 		</div>
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Clave <?php echo CAMPO_OBLIGATORIO; ?></label>
-				  	<input class="input" type="password" name="usuario_clave_1" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required >
+					<label class="labelForze">Clave <?php echo CAMPO_OBLIGATORIO; ?></label>
+				  	<input class="input" type="password" name="usuario_clave_1" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required  autocomplete="off">
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Repetir clave <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Repetir clave <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="password" name="usuario_clave_2" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required >
 				</div>
 		  	</div>
@@ -102,4 +103,5 @@
             <small>Los campos marcados con <?php echo CAMPO_OBLIGATORIO; ?> son obligatorios</small>
         </p>
 	</form>
+</div>
 </div>

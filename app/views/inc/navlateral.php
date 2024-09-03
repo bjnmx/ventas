@@ -98,7 +98,7 @@
 				<li class="full-width">
 					<a href="#" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
-							<i class="fas fa-users fa-fw"></i>
+							<i class="fa-duotone fa-solid fa-users"></i>
 						</div>
 						<div class="navLateral-body-cr">
 							USUARIOS
@@ -109,7 +109,7 @@
 						<li class="full-width">
 							<a href="<?php echo APP_URL; ?>userNew/" class="full-width">
 								<div class="navLateral-body-cl">
-									<i class="fas fa-cash-register fa-fw"></i>
+									<i class="fa-duotone fa-solid fa-user-plus"></i>
 								</div>
 								<div class="navLateral-body-cr">
 									Nuevo usuario
@@ -145,7 +145,7 @@
 				<li class="full-width">
 					<a href="#" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
-							<i class="fas fa-address-book fa-fw"></i>
+							<i class="fa-duotone fa-solid fa-calendar-circle-user"></i>
 						</div>
 						<div class="navLateral-body-cr">
 							CLIENTES
@@ -192,7 +192,7 @@
 				<li class="full-width">
 					<a href="#" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
-							<i class="fas fa-tags fa-fw"></i>
+							<i class="fa-duotone fa-solid fa-layer-group"></i>
 						</div>
 						<div class="navLateral-body-cr">
 							CATEGORIAS
@@ -238,7 +238,7 @@
 				<li class="full-width">
 					<a href="#" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
-							<i class="fas fa-cubes fa-fw"></i>
+							<i class="fa-duotone fa-solid fa-boxes-stacked"></i>
 						</div>
 						<div class="navLateral-body-cr">
 							PRODUCTOS
@@ -342,7 +342,7 @@
 				<li class="full-width">
 					<a href="#" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
-							<i class="far fa-file-pdf fa-fw"></i> 
+							<i class="fa-duotone fa-solid fa-file-pdf"></i>
 						</div>
 						<div class="navLateral-body-cr">
 							REPORTES
@@ -379,7 +379,7 @@
 				<li class="full-width">
 					<a href="#" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
-							<i class="fas fa-cogs fa-fw"></i>
+							<i class="fa-duotone fa-solid fa-gears"></i>
 						</div>
 						<div class="navLateral-body-cr">
 							CONFIGURACIONES

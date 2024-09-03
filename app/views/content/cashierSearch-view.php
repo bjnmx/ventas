@@ -1,5 +1,6 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
     <h1 class="title">Cajas</h1>
     <h2 class="subtitle"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Cajas</h2>
 </div>
@@ -44,4 +45,5 @@
             echo $insCaja->listarCajaControlador($url[1],15,$url[0],$_SESSION[$url[0]]);
         }
     ?>
+</div>
 </div>

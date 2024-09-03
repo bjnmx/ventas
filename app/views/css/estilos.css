@@ -202,7 +202,7 @@ body,html{
     border-right: none;
 }
 .navLateral-body{
-    background-color: #fff;
+    background-color: #9d9ea14a;
     position: relative;
 }
 .navLateral-body-logo{
@@ -304,6 +304,44 @@ body,html{
 }
 
 /*=============Estilos contenido ventanas globales*/
+
+.labelForze{
+    text-align: left;
+    display: block; /* Asegura que el label ocupe toda la anchura disponible */
+}
+
+
+.descUpdateCliente:hover{
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1),
+    0 15px 40px rgba(0, 0, 0, 0.2); /* Sombras más intensas en hover */
+}
+.copy-notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Color verde de éxito */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+.copy-notification.show {
+    display: block;
+    animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(20px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(20px); }
+}
+
 
 
 .dashboard-container {
