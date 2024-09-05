@@ -303,6 +303,29 @@ body,html{
     transform: rotate(180deg);
 }
 
+/*=============Estilos producto tiulo */
+.prodTitilo{
+    background: rgba(28, 96, 138, 0.85);
+    color: white;
+    border-radius: 10px 0px 10px 0;
+    padding:3px;
+}
+.fondoproducto{
+    background-color: #d1d1d1e0;
+    border-radius: 10px;
+    padding: 5px;
+    border: rgba(77, 79, 95, 0.24) 1px solid;
+
+}
+.fondoproducto:hover{
+    background-color: #d1d1d1e0;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+    border: #ffffff 0 solid;
+
+}
 /*=============Estilos contenido ventanas globales*/
 
 .labelForze{
@@ -342,14 +365,16 @@ body,html{
     100% { opacity: 0; transform: translateY(20px); }
 }
 
-
+.titulofondo{
+    background-color: #4d4f5f; color: white; border-radius: 5px; padding: 5px;
+}
 
 .dashboard-container {
-    background-color: #999aa105; /* Fondo ligeramente más claro */
+    background-color: #ffffff; /* Fondo ligeramente más claro */
     border-radius: 10px; /* Bordes más redondeados */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
     padding: 40px; /* Más espacio interno */
-    margin: 28px auto; /* Centrar con mayor espacio alrededor */
+    margin: -20px auto; /* Centrar con mayor espacio alrededor */
     max-width: 1200px;
     text-align: center;
 }
@@ -363,7 +388,7 @@ body,html{
 }
 
 .dashboard-header h1 {
-    font-size: 2.5rem; /* Título más grande */
+    font-size: 1rem; /* Título más grande */
     color: rgba(60, 64, 67, 0.8); /* Color de texto más oscuro */
     font-weight: 300; /* Peso de fuente ligero */
     margin-bottom: 10px;
@@ -432,7 +457,7 @@ body,html{
 /*=============Estilos contenido pagina*/
 .pageContent{
     width: calc(100% - 300px);
-    background-color: #fff;
+    background-color: #ebebeb;
     transition: all .3s ease-in-out;
 }
 .pageContent-change{

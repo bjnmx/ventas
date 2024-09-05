@@ -1,9 +1,10 @@
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Ventas</h1>
 	<h2 class="subtitle"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Información de venta</h2>
 </div>
 
-<div class="container pb-6 pt-6">
+<div class="container pb-2 pt-2">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";
@@ -16,7 +17,7 @@
 			$datos_venta=$datos->fetch();
 	?>
 	<h2 class="title has-text-centered">Datos de la venta <?php echo " (".$code.")"; ?></h2>
-	<div class="columns pb-6 pt-6">
+	<div class="columns pb-4 pt-4">
 		<div class="column">
 
 			<div class="full-width sale-details text-condensedLight">
@@ -76,7 +77,7 @@
 
 	</div>
 
-	<div class="columns pb-6 pt-6">
+	<div class="columns pb-4 pt-4">
 		<div class="column">
 			<div class="table-container">
                 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
@@ -152,4 +153,5 @@
 			include "./app/views/inc/error_alert.php";
 		}
 	?>
+</div>
 </div>

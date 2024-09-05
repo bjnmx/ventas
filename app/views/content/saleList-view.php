@@ -1,5 +1,6 @@
-<div class="container is-fluid mb-6">
-	<h1 class="title">Ventas</h1>
+<div class="dashboard-container">
+<div class="dashboard-header">
+	<h1 style="color: white" class="titulofondo">Ventas</h1>
 	<h2 class="subtitle"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Ventas</h2>
 </div>
 <div class="container pb-6 pt-6">
@@ -15,4 +16,5 @@
 
 		include "./app/views/inc/print_invoice_script.php";
 	?>
+</div>
 </div>

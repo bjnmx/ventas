@@ -1,4 +1,5 @@
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<?php 
 
 		$id=$insLogin->limpiarCadena($url[1]);
@@ -16,7 +17,7 @@
 	<h2 class="subtitle"><i class="fas fa-camera"></i> &nbsp; Actualizar foto de perfil</h2>
 	<?php } ?>
 </div>
-<div class="container pb-6 pt-6">
+<div class="container pb-2 pt-2">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";
@@ -85,4 +86,5 @@
 			include "./app/views/inc/error_alert.php";
 		}
 	?>
+    </div>
 </div>

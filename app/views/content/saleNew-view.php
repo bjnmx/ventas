@@ -1,9 +1,10 @@
-<div class="container is-fluid mb-6">
-	<h1 class="title">Ventas</h1>
+<div class="dashboard-container">
+<div class="dashboard-header">
+	<h1 style="color:white;" class="titulofondo">Ventas</h1>
 	<h2 class="subtitle"><i class="fas fa-cart-plus fa-fw"></i> &nbsp; Nueva venta</h2>
 </div>
 
-<div class="container pb-6 pt-6">
+<div class="container pb-4 pt-4">
     <?php
         $check_empresa=$insLogin->seleccionarDatos("Normal","empresa LIMIT 1","*",0);
 
@@ -14,7 +15,7 @@
 
         <div class="column pb-6">
 
-            <p class="has-text-centered pt-6 pb-6">
+            <p class="has-text-centered pt-2 pb-2">
                 <small>Para agregar productos debe de digitar el código de barras en el campo "Código de producto" y luego presionar &nbsp; <strong class="is-uppercase" ><i class="far fa-check-circle"></i> &nbsp; Agregar producto</strong>. También puede agregar el producto mediante la opción &nbsp; <strong class="is-uppercase"><i class="fas fa-search"></i> &nbsp; Buscar producto</strong>. Ademas puede escribir el código de barras y presionar la tecla <strong class="is-uppercase">enter</strong></small>
             </p>
             <form class="pt-6 pb-6" id="sale-barcode-form" autocomplete="off">
@@ -58,7 +59,7 @@
                             <button type="button" class="button is-link is-light" onclick="print_ticket('<?php echo APP_URL."app/pdf/ticket.php?code=".$_SESSION['venta_codigo_factura']; ?>')" >
                                 <i class="fas fa-receipt fa-2x"></i> &nbsp;
                                 Imprimir ticket de venta
-                            </buttona>
+                            </button>
                         </div>
                         <div class="column has-text-centered">
                             <button type="button" class="button is-link is-light" onclick="print_invoice('<?php echo APP_URL."app/pdf/invoice.php?code=".$_SESSION['venta_codigo_factura']; ?>')" >
@@ -69,6 +70,7 @@
                     </div>
                 </div>
             </div>
+
             <?php
                     unset($_SESSION['venta_codigo_factura']);
                 }
@@ -254,14 +256,14 @@
                     <input class="input" type="text" id="venta_cambio" value="0.00" readonly >
                 </div>
 
-                <h4 class="subtitle is-5 has-text-centered has-text-weight-bold mb-5"><small>TOTAL A PAGAR: <?php echo MONEDA_SIMBOLO.number_format($_SESSION['venta_total'],MONEDA_DECIMALES,MONEDA_SEPARADOR_DECIMAL,MONEDA_SEPARADOR_MILLAR)." ".MONEDA_NOMBRE; ?></small></h4>
+                <h4 class="subtitle is-5 has-text-centered has-text-weight-bold mb-5"><small style="background-color: #07773eed; padding: 3px; color: white; border-radius: 5px">TOTAL A PAGAR: <?php echo MONEDA_SIMBOLO.number_format($_SESSION['venta_total'],MONEDA_DECIMALES,MONEDA_SEPARADOR_DECIMAL,MONEDA_SEPARADOR_MILLAR)." ".MONEDA_NOMBRE; ?></small></h4>
 
                 <?php if($_SESSION['venta_total']>0){ ?>
                 <p class="has-text-centered">
                     <button type="submit" class="button is-info is-rounded"><i class="far fa-save"></i> &nbsp; Guardar venta</button>
                 </p>
                 <?php } ?>
-                <p class="has-text-centered pt-6">
+                <p class="has-text-centered pt-4">
                     <small>Los campos marcados con <?php echo CAMPO_OBLIGATORIO; ?> son obligatorios</small>
                 </p>
                 <input type="hidden" value="<?php echo number_format($_SESSION['venta_total'],MONEDA_DECIMALES,MONEDA_SEPARADOR_DECIMAL,""); ?>" id="venta_total_hidden">

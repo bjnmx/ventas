@@ -1,5 +1,6 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Productos</h1>
 	<h2 class="subtitle"><i class="fas fa-box fa-fw"></i> &nbsp; Nuevo producto</h2>
 </div>
@@ -13,13 +14,13 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Código de barra <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Código de barra <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_codigo" pattern="[a-zA-Z0-9- ]{1,77}" maxlength="77" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Nombre <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Nombre <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_nombre" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,$#\-\/ ]{1,100}" maxlength="100" required >
 				</div>
 		  	</div>
@@ -27,19 +28,19 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Precio de compra <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Precio de compra <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_precio_compra" pattern="[0-9.]{1,25}" maxlength="25" value="0.00" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Precio de venta <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Precio de venta <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_precio_venta" pattern="[0-9.]{1,25}" maxlength="25" value="0.00" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Stock o existencias <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Stock o existencias <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_stock" pattern="[0-9]{1,22}" maxlength="22" required >
 				</div>
 		  	</div>
@@ -47,13 +48,13 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Marca</label>
+					<label class="labelForze">Marca</label>
 				  	<input class="input" type="text" name="producto_marca" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{1,30}" maxlength="30" >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Modelo</label>
+					<label class="labelForze">Modelo</label>
 				  	<input class="input" type="text" name="producto_modelo" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{1,30}" maxlength="30" >
 				</div>
 		  	</div>
@@ -90,7 +91,7 @@
 		</div>
 		<div class="columns">
 			<div class="column">
-				<label>Foto o imagen del producto</label><br>
+				<label class="labelForze"><i class="fa-duotone fa-solid fa-image"></i> Foto o imagen del producto</label><br>
 				<div class="file is-small has-name">
 				  	<label class="file-label">
 				    	<input class="file-input" type="file" name="producto_foto" accept=".jpg, .png, .jpeg" >

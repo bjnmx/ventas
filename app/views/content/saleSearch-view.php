@@ -1,9 +1,10 @@
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
     <h1 class="title">Ventas</h1>
     <h2 class="subtitle"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; Buscar ventas por código</h2>
 </div>
 
-<div class="container pb-6 pt-6">
+<div class="container pb-4 pt-4">
     <?php
     
         use app\controllers\saleController;
@@ -30,10 +31,10 @@
     <?php }else{ ?>
     <div class="columns">
         <div class="column">
-            <form class="has-text-centered mt-6 mb-6 FormularioAjax" action="<?php echo APP_URL; ?>app/ajax/buscadorAjax.php" method="POST" autocomplete="off" >
+            <form class="has-text-centered mt-2 mb-2 FormularioAjax" action="<?php echo APP_URL; ?>app/ajax/buscadorAjax.php" method="POST" autocomplete="off" >
                 <input type="hidden" name="modulo_buscador" value="eliminar">
                 <input type="hidden" name="modulo_url" value="<?php echo $url[0]; ?>">
-                <p><i class="fas fa-search fa-fw"></i> &nbsp; Estas buscando por código <strong>“<?php echo $_SESSION[$url[0]]; ?>”</strong></p>
+                <p class="titulofondo"><i class="fas fa-search fa-fw"></i> &nbsp; Estas buscando por código <strong style="color: white">“<?php echo $_SESSION[$url[0]]; ?>”</strong></p>
                 <br>
                 <button type="submit" class="button is-danger is-rounded"><i class="fas fa-trash-restore"></i> &nbsp; Eliminar busqueda</button>
             </form>
@@ -45,4 +46,5 @@
             include "./app/views/inc/print_invoice_script.php";
         }
     ?>
+</div>
 </div>

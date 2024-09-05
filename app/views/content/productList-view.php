@@ -1,11 +1,13 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
-	<h1 class="title">Productos</h1>
+<div class="dashboard-container">
+<div class="dashboard-header">
+	<h1 style="color: white" class="titulofondo">Productos</h1>
 	<h2 class="subtitle"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de productos</h2>
 </div>
-<div class="container pb-6 pt-6">
+<div style="text-align: left;" class="container pb-2 pt-2">
 
-	<div class="form-rest mb-6 mt-6"></div>
+	<div class="form-rest mb-2 mt-2 "></div>
+    <div class="lista-productos" style="max-height: 400px; overflow-y: auto; overflow-x: hidden;">
 
 	<?php
 		use app\controllers\productController;
@@ -14,4 +16,5 @@
 
 		echo $insProducto->listarProductoControlador($url[1],10,$url[0],"",0);
 	?>
+</div>
 </div>

@@ -1,5 +1,6 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Empresa</h1>
 	<h2 class="subtitle"><i class="fas fa-store-alt fa-fw"></i> &nbsp; Datos de empresa</h2>
 </div>
@@ -12,7 +13,7 @@
 		if($datos->rowCount()==1){
 			$datos=$datos->fetch();
 	?>
-	<h2 class="title has-text-centered"><?php echo $datos['empresa_nombre']; ?></h2>
+	<h2 style="font-size: 20px; border-radius: 10px 10px 0 0 " class="titulofondo has-text-centered"><?php echo $datos['empresa_nombre']; ?></h2> <br>
 
 	<form class="FormularioAjax" action="<?php echo APP_URL; ?>app/ajax/empresaAjax.php" method="POST" autocomplete="off" >
 
@@ -38,13 +39,13 @@
   		<div class="columns">
   			<div class="column">
   				<div class="control">
-					<label>Nombre <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Nombre <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="empresa_nombre" value="<?php echo $datos['empresa_nombre']; ?>" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ., ]{4,85}" maxlength="85" required >
 				</div>
   			</div>
   			<div class="column">
 		    	<div class="control">
-					<label>Teléfono</label>
+					<label class="labelForze">Teléfono</label>
 				  	<input class="input" type="text" name="empresa_telefono" value="<?php echo $datos['empresa_telefono']; ?>" pattern="[0-9()+]{8,20}" maxlength="20" >
 				</div>
 		  	</div>
@@ -52,13 +53,13 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Email</label>
+					<label class="labelForze">Email</label>
 				  	<input class="input" type="email" name="empresa_email" value="<?php echo $datos['empresa_email']; ?>" maxlength="50" >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Dirección</label>
+					<label class="labelForze">Dirección</label>
 				  	<input class="input" type="text" name="empresa_direccion" value="<?php echo $datos['empresa_direccion']; ?>" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{4,97}" maxlength="97" >
 				</div>
 		  	</div>
@@ -130,4 +131,5 @@
 	</form>
 
 	<?php } ?>
+</div>
 </div>

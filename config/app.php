@@ -13,7 +13,7 @@
 
 	/*----------  Configuración de moneda  ----------*/
 	const MONEDA_SIMBOLO="$";
-	const MONEDA_NOMBRE="USD";
+	const MONEDA_NOMBRE="MXM";
 	const MONEDA_DECIMALES="2";
 	const MONEDA_SEPARADOR_MILLAR=",";
 	const MONEDA_SEPARADOR_DECIMAL=".";

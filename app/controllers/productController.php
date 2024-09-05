@@ -431,8 +431,8 @@
 				$contador=$inicio+1;
 				$pag_inicio=$inicio+1;
 				foreach($datos as $rows){
-					$tabla.='
-		            <article class="media pb-3 pt-3">
+					$tabla.= '
+		            <article  class="media pb-1 pt-1 fondoproducto">
 		                <figure class="media-left">
 		                    <p class="image is-64x64">';
 		                        if(is_file("./app/views/productos/".$rows['producto_foto'])){
@@ -445,7 +445,7 @@
 		                <div class="media-content">
 		                    <div class="content">
 		                        <p>
-		                            <strong>'.$contador.' - '.$rows['producto_nombre'].'</strong><br>
+		                            <strong class="prodTitilo">'.$contador.' - '.$rows['producto_nombre'].'</strong><br>
 		                            <strong>CODIGO:</strong> '.$rows['producto_codigo'].', 
 		                            <strong>PRECIO:</strong> $'.$rows['producto_precio_venta'].', 
 		                            <strong>STOCK:</strong> '.$rows['producto_stock_total'].', 
@@ -475,7 +475,7 @@
 		            </article>
 
 
-		            <hr>
+		            <hr style="margin: 0.5rem 0;">
 		            ';
 					$contador++;
 				}

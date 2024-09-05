@@ -1,10 +1,11 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Cajas</h1>
 	<h2 class="subtitle"><i class="fas fa-sync-alt"></i> &nbsp; Actualizar caja</h2>
 </div>
 
-<div class="container pb-6 pt-6">
+<div class="container pb-2 pt-2">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";
@@ -27,19 +28,19 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Numero de caja <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Numero de caja <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="caja_numero" pattern="[0-9]{1,5}" maxlength="5" value="<?php echo $datos['caja_numero']; ?>" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Nombre o código de caja <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Nombre o código de caja <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="caja_nombre" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ:# ]{3,70}" maxlength="70" value="<?php echo $datos['caja_nombre']; ?>" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Efectivo en caja <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Efectivo en caja <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="caja_efectivo" pattern="[0-9.]{1,25}" maxlength="25" value="<?php echo number_format($datos['caja_efectivo'],2,'.',''); ?>" required >
 				</div>
 		  	</div>
@@ -56,4 +57,5 @@
 			include "./app/views/inc/error_alert.php";
 		}
 	?>
+</div>
 </div>

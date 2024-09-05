@@ -1,11 +1,12 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Reportes</h1>
 	<h2 class="subtitle"><i class="fas fa-box-open fa-fw"></i> &nbsp; Reporte general de inventario</h2>
 </div>
 
 <div class="container is-fluid">
-    <h4 class="title has-text-centered mt-6 mb-6">Generar reporte de inventario personalizado</h4>
+    <h4 class="titulofondo has-text-centered mt-6 mb-6">Generar reporte de inventario personalizado</h4>
     <div class="container is-fluid">
         <div class="columns">
             <div class="column is-two-thirds is-offset-one-fifth">
@@ -26,6 +27,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <script>

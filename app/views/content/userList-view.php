@@ -1,7 +1,7 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
 <div class="dashboard-container">
 <div class="dashboard-header">
-	<h1 class="title">Usuarios</h1>
+	<h1 style="color: white" class="title titulofondo">Usuarios</h1>
 	<h2 class="subtitle"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de usuarios</h2>
 </div>
 <div class="container pb-6 pt-6">

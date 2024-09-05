@@ -1,10 +1,11 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Productos</h1>
 	<h2 class="subtitle"><i class="fas fa-sync-alt"></i> &nbsp; Actualizar producto</h2>
 </div>
 
-<div class="container pb-6 pt-6">
+<div class="container pb-2 pt-2">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";
@@ -39,13 +40,13 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Código de barra <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Código de barra <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_codigo" value="<?php echo $datos['producto_codigo']; ?>" pattern="[a-zA-Z0-9- ]{1,77}" maxlength="77" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Nombre <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Nombre <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_nombre" value="<?php echo $datos['producto_nombre']; ?>" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,$#\-\/ ]{1,100}" maxlength="100" required >
 				</div>
 		  	</div>
@@ -53,19 +54,19 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Precio de compra <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Precio de compra <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_precio_compra" value="<?php echo $datos['producto_precio_compra']; ?>" pattern="[0-9.]{1,25}" maxlength="25" value="0.00" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Precio de venta <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Precio de venta <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_precio_venta" value="<?php echo $datos['producto_precio_venta']; ?>" pattern="[0-9.]{1,25}" maxlength="25" value="0.00" required >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Stock o existencias <?php echo CAMPO_OBLIGATORIO; ?></label>
+					<label class="labelForze">Stock o existencias <?php echo CAMPO_OBLIGATORIO; ?></label>
 				  	<input class="input" type="text" name="producto_stock" value="<?php echo $datos['producto_stock_total']; ?>" pattern="[0-9]{1,22}" maxlength="22" required >
 				</div>
 		  	</div>
@@ -73,13 +74,13 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Marca</label>
+					<label class="labelForze">Marca</label>
 				  	<input class="input" type="text" name="producto_marca" value="<?php echo $datos['producto_marca']; ?>" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{1,30}" maxlength="30" >
 				</div>
 		  	</div>
 		  	<div class="column">
 		    	<div class="control">
-					<label>Modelo</label>
+					<label class="labelForze">Modelo</label>
 				  	<input class="input" type="text" name="producto_modelo" value="<?php echo $datos['producto_modelo']; ?>" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{1,30}" maxlength="30" >
 				</div>
 		  	</div>
@@ -128,4 +129,5 @@
 			include "./app/views/inc/error_alert.php";
 		}
 	?>
+</div>
 </div>

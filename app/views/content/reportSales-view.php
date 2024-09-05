@@ -1,12 +1,13 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
-<div class="container is-fluid mb-6">
+<div class="dashboard-container">
+<div class="dashboard-header">
 	<h1 class="title">Reportes</h1>
 	<h2 class="subtitle"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; Reporte general de ventas</h2>
 </div>
 
 <div class="container is-fluid">
     <div id="today-sales">
-        <h4 class="title has-text-centered mt-6 mb-6">Estadísticas de ventas de hoy (<?php echo date("d-m-Y"); ?>)</h4>
+        <h4 class="titulofondo has-text-centered mt-6 mb-6">Estadísticas de ventas de hoy (<?php echo date("d-m-Y"); ?>)</h4>
         <div class="table-container">
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                 <thead>
@@ -44,9 +45,9 @@
             </table>
         </div>
     </div>
-    <hr>
+    <hr style="background-color: #4c4e5e;>
     <div class="container is-fluid">
-        <h4 class="title has-text-centered mt-6 mb-6">Generar reporte personalizado</h4>
+        <h4  class="titulofondo has-text-centered mt-6 mb-6">Generar reporte personalizado</h4>
         <div class="container is-fluid">
             <div class="columns">
                 <div class="column">
