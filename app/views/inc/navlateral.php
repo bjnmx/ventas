@@ -38,7 +38,7 @@
 				<li class="full-width">
 					<a href="<?php echo APP_URL; ?>dashboard/" class="full-width">
 						<div class="navLateral-body-cl">
-							<i class="fa-duotone fa-solid fa-house"></i>
+							<i class="fa-duotone fa-solid fa-house-window "></i>
 						</div>
 						<div class="navLateral-body-cr">
 							Inicio

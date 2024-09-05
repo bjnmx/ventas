@@ -258,7 +258,7 @@ body,html{
     transition: all .3s ease-in-out;
 }
 .menu-principal li a:hover{
-    color: #3F51B5;
+    color: #799950;
 }
 .menu-principal li a div.navLateral-body-cl,
 .menu-principal li a div.navLateral-body-cr{
@@ -329,7 +329,53 @@ body,html{
     border: #ffffff 0 solid;
 
 }
+
+
+/*=============navavr new*/
+#btn-menu:hover {
+    color: #799950 !important; /* Cambia el color del ícono al pasar el mouse */
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+    transition: all 0.3s ease; /* Añade una transición suave */
+}
+
 /*=============Estilos contenido ventanas globales*/
+.dashboard-container {
+    position: relative; /* Asegura que el contenedor padre tenga un contexto de posicionamiento */
+}
+
+.window-controls {
+    position: absolute;
+    top: 10px; /* Alinea los íconos con la parte superior del contenedor */
+    right: 10px; /* Alinea los íconos con la parte derecha del contenedor */
+    display: flex;
+    gap: 10px;
+}
+
+.window-btn {
+    color: #5890e4; /* Color inicial del ícono */
+    cursor: pointer;
+    font-size: 1.5rem; /* Tamaño del ícono */
+    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.window-btn:hover {
+    color: #0056b3; /* Color más oscuro en hover */
+    transform: scale(1.1); /* Agranda ligeramente el ícono en hover */
+}
+
+.maximize-btn:hover:before {
+    content: "\f37e"; /* Código Unicode para el ícono fa-light fa-browser */
+    font-family: "Font Awesome 6 Pro"; /* Asegúrate de que la familia de FontAwesome esté configurada */
+    font-weight: 300; /* Cambia a estilo light */
+}
+.window-btn.fa-solid.fa-rectangle-xmark:hover {
+    font-family: "Font Awesome 6 Pro"; /* Cambia la familia de fuentes a la del ícono delgado */
+    font-weight: 100; /* Peso delgado */
+}
+
+
+
+
 
 .labelForze{
     text-align: left;
