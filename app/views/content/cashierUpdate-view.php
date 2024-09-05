@@ -5,7 +5,7 @@
 	<h2 class="subtitle"><i class="fas fa-sync-alt"></i> &nbsp; Actualizar caja</h2>
 </div>
 
-<div class="container pb-2 pt-2">
+<div class="container pb-2 pt-v c 2">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";

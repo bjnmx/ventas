@@ -45,7 +45,8 @@ body,html{
     align-items: center;
     background: #000428;
     background: -webkit-linear-gradient(to right, #004e92, #000428);
-    background: linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #ffffff, #5f872c);
+
 }
 
 .main-container > .login,
@@ -67,7 +68,7 @@ body,html{
     max-width: 170px;
 }
 .text-condensedLight{ font-family: "RobotoCondensedLight"; }
-.tittles{ font-family: "OswaldLight"; }
+/*.tittles{ font-family: "monospace"; }*/
 .full-width{
     margin: 0;
     padding: 0;
@@ -103,13 +104,14 @@ body,html{
 
 /*  Scrolls */
 .scroll{
-	scrollbar-color: rgba(102,107,122,1) rgb(0, 4, 39);
+	scrollbar-color:  rgb(120 152 79) rgb(235 240 229);
 	scrollbar-width: thin;
 }
 
 /*=============Estilos barra superior*/
 .navBar{
-    background-color: #4b4e5e;
+    /*background-color: #4b4e5e;*/
+    background: linear-gradient(to right, #ffffff, #5f872c);
     height: 45px;
     color: #fff;
     position: relative;
@@ -202,7 +204,8 @@ body,html{
     border-right: none;
 }
 .navLateral-body{
-    background-color: #9d9ea14a;
+    background: linear-gradient(to right, #ffffff, #d2d9c9);
+    /*background-color: #9d9ea14a;*/
     position: relative;
 }
 .navLateral-body-logo{
@@ -211,7 +214,7 @@ body,html{
     color: #fff;
     width: 100%;
     font-size: 25px;
-    background-color: #3e404d87;
+    background-color: #77984d;
     border-radius: 10px;
 }
 .navLateral-body-cl,
@@ -241,7 +244,7 @@ body,html{
     height: 70px;
     line-height: 70px; 
     font-size:20px; 
-    background-color: #F5F5F5;
+    background-color: #4373033b;
     text-align: center;
 }
 .menu-principal li,
@@ -250,7 +253,7 @@ body,html{
 }
 .menu-principal li a{
     height: 45px;
-    color: #333;
+    color: #000000;
     position: relative;
     transition: all .3s ease-in-out;
 }

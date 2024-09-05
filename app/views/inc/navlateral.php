@@ -29,7 +29,7 @@
 				</span>
 			</figcaption>
 		</figure>
-		<div class="full-width tittles navLateral-body-tittle-menu has-text-centered is-uppercase">
+		<div class="full-width  navLateral-body-tittle-menu has-text-centered is-uppercase">
 			<i class="fa-duotone fa-solid fa-cart-shopping"></i> &nbsp; <?php echo APP_NAME; ?>
 		</div>
 		<nav class="full-width">

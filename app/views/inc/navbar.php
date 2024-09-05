@@ -1,6 +1,6 @@
 <div class="full-width navBar">
     <div class="full-width navBar-options">
-        <i class="fas fa-exchange-alt fa-fw" id="btn-menu"></i>
+        <i style="color: #8c8d94" class="fas fa-exchange-alt fa-fw" id="btn-menu"></i>
         <nav class="navBar-options-list">
             <ul class="list-unstyle">
                 <li class="text-condensedLight noLink" >
@@ -24,3 +24,4 @@
         </nav>
     </div>
 </div>
+
