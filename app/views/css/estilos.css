@@ -104,16 +104,17 @@ body,html{
 
 /*  Scrolls */
 .scroll{
-	scrollbar-color:  rgb(120 152 79) rgb(235 240 229);
+	scrollbar-color:  rgb(73 115 132) rgb(235 240 229);
 	scrollbar-width: thin;
 }
 
 /*=============Estilos barra superior*/
 .navBar{
-    /*background-color: #4b4e5e;*/
-    background: linear-gradient(to right, #ffffff, #2c7687);
+    background-color: #e7ebe2;
+    /*background: linear-gradient(to right, #ffffff, #2c7687);*/
     height: 45px;
-    color: #fff;
+    color: #3a7687;
+    position: relative;
     position: relative;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -169,7 +170,7 @@ body,html{
     padding-top: 0;
     margin-top: 0;
     box-sizing: border-box;
-    color: #FFF;
+    color: #4a7485;
 }
 .navBar-options-list ul li img{
     border: 1px solid #E1E1E1;
@@ -258,7 +259,7 @@ body,html{
     transition: all .3s ease-in-out;
 }
 .menu-principal li a:hover{
-    color: #799950;
+    color: #3a7687;
 }
 .menu-principal li a div.navLateral-body-cl,
 .menu-principal li a div.navLateral-body-cr{
@@ -332,7 +333,7 @@ body,html{
 
 /*=============navavr new*/
 #btn-menu:hover {
-    color: #799950 !important; /* Cambia el color del ícono al pasar el mouse */
+    color: #4a7485 !important; /* Cambia el color del ícono al pasar el mouse */
     transform: scale(1.2); /* Aumenta ligeramente el tamaño */
     transition: all 0.3s ease; /* Añade una transición suave */
 }
@@ -414,7 +415,7 @@ body,html{
 }
 
 .titulofondo{
-    background-color: #4d4f5f; color: white; border-radius: 5px; padding: 5px;
+    background-color: #497384; color: white; border-radius: 5px; padding: 5px;
 }
 
 .dashboard-container {
@@ -505,7 +506,7 @@ body,html{
 /*=============Estilos contenido pagina*/
 .pageContent{
     width: calc(100% - 300px);
-    background-color: #86acacc2;
+    background-color: #427485;
     transition: all .3s ease-in-out;
 }
 .pageContent-change{

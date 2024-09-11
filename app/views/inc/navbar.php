@@ -1,6 +1,6 @@
 <div class="full-width navBar">
     <div class="full-width navBar-options">
-        <i style="color: #8c8d94" class="fas fa-exchange-alt fa-fw" id="btn-menu"></i>
+        <i style="color: #3279bd" class="fas fa-exchange-alt fa-fw" id="btn-menu"></i>
         <nav class="navBar-options-list">
             <ul class="list-unstyle">
                 <li class="text-condensedLight noLink" >
@@ -9,7 +9,7 @@
                     </a>
                 </li>
                 <li class="text-condensedLight noLink" >
-                    <small><?php echo $_SESSION['usuario']; ?></small>
+                    <small style="font-weight: bold"><?php echo $_SESSION['usuario']; ?></small>
                 </li>
                 <li class="noLink">
                     <?php
