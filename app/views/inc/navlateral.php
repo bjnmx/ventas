@@ -23,13 +23,13 @@
                 ?>
 			</div>
 			<figcaption class="navLateral-body-cr">
-				<span>
-					<?php echo $_SESSION['nombre']; ?><br>
+				<span id="nombre-usuario" style="color: white;">
+					<?php echo $_SESSION['nombre']; ?>
 					<small>(<?php echo $_SESSION['cargo']; ?>)</small>
 				</span>
 			</figcaption>
 		</figure>
-		<div class="full-width  navLateral-body-tittle-menu has-text-centered is-uppercase">
+		<div style="color: white" class="full-width  navLateral-body-tittle-menu has-text-centered is-uppercase">
 			<i class="fa-duotone fa-solid fa-cart-shopping"></i> &nbsp; <?php echo APP_NAME; ?>
 		</div>
 		<nav class="full-width">
@@ -41,7 +41,7 @@
 							<i class="fa-duotone fa-solid fa-house-window "></i>
 						</div>
 						<div class="navLateral-body-cr">
-							Inicio
+                            I N I C I O
 						</div>
 					</a>
 				</li>

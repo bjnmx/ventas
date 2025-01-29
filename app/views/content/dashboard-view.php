@@ -1,6 +1,14 @@
 <div class="dashboard-container">
     <div class="dashboard-header">
-        <h1><i style="color: #4d4f5f" class="fab fa-dashcube fa-fw"></i> DASHBOARD</h1>
+        <h1 class="is-uppercase">
+            <span class="icon has-text-success">
+                <i style="color: #4d4f5f" class="fas fa-wrench fa-xs fa-spin"></i>
+<!--                <i style="color: #4d4f5f" class="fas fa-tools fa-xs fa-spin"></i>-->
+            </span>
+            <span style="margin-left: 10px;">
+                <?php echo $datos['empresa_nombre']; ?>
+            </span>
+        </h1>
         <figure class="image is-128x128">
             <?php
             if(is_file("./app/views/fotos/".$_SESSION['foto'])){

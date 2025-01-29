@@ -1,14 +1,40 @@
 <?php include "./app/views/inc/admin_security.php"; ?>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.minimize-btn').addEventListener('click', function() {
+            document.querySelector('.menu').style.display = 'none';
+        });
+
+        document.querySelector('.maximize-btn').addEventListener('click', function() {
+            document.querySelector('.menu').style.display = 'block';
+        });
+
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            window.location.href = "<?php echo APP_URL; ?>dashboard/";
+        });
+    });
+</script>
 <div class="container is-fluid mb-6">
 	<?php 
 
 		$id=$insLogin->limpiarCadena($url[1]);
 
 	?>
-	<h1 class="title">Empresa</h1>
-	<h2 class="subtitle"><i class="far fa-image"></i> &nbsp; Actualizar logo o imagen de empresa</h2>
-</div>
-<div class="container pb-6 pt-6">
+
+    <div class="dashboard-container">
+        <div class="window-controls" style="position: absolute; top: 10px; right: 10px;">
+            <i class="fa-light fa-window-minimize window-btn minimize-btn" title="Minimizar"></i>
+            <i class="fa-solid fa-window-maximize window-btn maximize-btn" title="Maximizar"></i> <!-- Ícono de maximizar -->
+            <i class="fa-solid fa-rectangle-xmark window-btn close-btn" title="Cerrar"></i> <!-- Ícono de cerrar -->
+        </div>
+    <div class="dashboard-header">
+
+        <h1 class="title">Empresa</h1>
+	    <h2 class="subtitle"><i class="far fa-image"></i> &nbsp; Actualizar logo o imagen de empresa</h2>
+    </div>
+
+
+<div class="container menu pb-6 pt-6">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";
@@ -71,10 +97,10 @@
 				</p>
 			</form>
 		</div>
-	</div>
+	</div></div>
 	<?php
 		}else{
 			include "./app/views/inc/error_alert.php";
 		}
 	?>
-</div>
+</div></div>

@@ -1,4 +1,24 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.minimize-btn').addEventListener('click', function() {
+            document.querySelector('.menu').style.display = 'none';
+        });
+
+        document.querySelector('.maximize-btn').addEventListener('click', function() {
+            document.querySelector('.menu').style.display = 'block';
+        });
+
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            window.location.href = "<?php echo APP_URL; ?>dashboard/";
+        });
+    });
+</script>
 <div class="dashboard-container">
+    <div class="window-controls" style="position: absolute; top: 10px; right: 10px;">
+        <i class="fa-light fa-window-minimize window-btn minimize-btn" title="Minimizar"></i>
+        <i class="fa-solid fa-window-maximize window-btn maximize-btn" title="Maximizar"></i> <!-- Ícono de maximizar -->
+        <i class="fa-solid fa-rectangle-xmark window-btn close-btn" title="Cerrar"></i> <!-- Ícono de cerrar -->
+    </div>
 <div class="container is-fluid mb-1">
 	<?php 
 
@@ -17,7 +37,7 @@
 	<h2 class="subtitle"><i class="fas fa-sync-alt"></i> &nbsp; Actualizar usuario</h2>
 	<?php } ?>
 </div>
-<div  class="container pb-1 pt-1">
+<div  class="container menu pb-1 pt-1">
 	<?php
 	
 		include "./app/views/inc/btn_back.php";
